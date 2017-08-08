@@ -26,6 +26,11 @@ var articleOne = {
             </p>`
 };
 
+function createTemplate (data) {
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
 var htmlTemplate =`
 <html>
     
@@ -54,12 +59,11 @@ var htmlTemplate =`
         </div>
         </div>
     </body>
-    
-
-
 `;
+    return htmlTemplate;
+}
 app.get('/article-one', function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+     res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req,res){
@@ -82,7 +86,7 @@ app.get('/ui/madi.png', function (req, res) {
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port = 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });

@@ -24,7 +24,16 @@ var articles = {
             </p>
              <p>
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>`
+            </p>
+            <div>
+                <hr/>
+            <div class="footer">
+                <input type="text" id="name" placeholder="name"></input>
+                <input type="submit" value="Submit" id="submit_btn"></input>
+                <ul id="namelist">
+                </ul>
+            </div>
+            </div>`
     },
     'article-two':{
     title:'Article Two|Sai Ganesha',
@@ -33,7 +42,16 @@ var articles = {
     content:
     `<p>
         This is the content for my second article. 
-     </p>`
+     </p>
+      <div>
+         <hr/>
+                <div class="footer">
+                <input type="text" id="name" placeholder="name"></input>
+                <input type="submit" value="Submit" id="submit_btn"></input>
+                <ul id="namelist">
+                </ul>
+    </div>
+    </div>`
     },
     'article-three':{
     title:'Article Three|Sai Ganesha',
@@ -42,7 +60,16 @@ var articles = {
     content:
     `<p>
         This is the content for my third article. 
-     </p>`
+     </p>
+     <div>
+         <hr/>
+                <div class="footer">
+                <input type="text" id="name" placeholder="name"></input>
+                <input type="submit" value="Submit" id="submit_btn"></input>
+                <ul id="namelist">
+                </ul>
+    </div>
+    </div>`
     }
 };
     

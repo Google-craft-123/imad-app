@@ -16,15 +16,13 @@ var articles = {
     date:'August8, 2017',
     content:`
      <p>
-                This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+                Hello I am Sai Ganesha. I study in Our Own English High School in Sharjah,U.A.E. I study 7th standard and I am 13 years old.
             </p>
            
             <p>
-                This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+               I own a youtube channel and the channel name is 'Google Craft' 
             </p>
-             <p>
-                This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>
+            <hr/>
             <p>
                     HELLO! Type your comments bellow!
             </p>        
@@ -46,6 +44,7 @@ var articles = {
     `<p>
         This is the content for my second article. 
     </p>
+    <hr/>
     <p>
                 HELLO! Type your comments bellow!
     </p>

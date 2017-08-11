@@ -54,11 +54,6 @@ submit.onclick = function () {
     //Make the request
     request.open('GET','http://sganesha75.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
-
-};
-{
-    //Make a reqquest to a server and send the name
-    
     //Capture a list of names and render it as a list
     var names = ['name1','name2', 'name3', 'name4'];
     var list = '';
@@ -67,4 +62,4 @@ submit.onclick = function () {
     }
     var ul = document.getElementById('namelist');
     ul.innerHTML = list;
-}
+};

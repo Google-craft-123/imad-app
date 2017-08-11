@@ -67,6 +67,7 @@ var articles = {
     `<p>
         This is the content for my third article. 
      </p>
+     <hr/>
       <p>
                 HELLO! Type your comments bellow!
     </p>

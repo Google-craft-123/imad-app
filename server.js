@@ -25,20 +25,8 @@ var articles = {
            
             <p>
                I own a youtube channel and the channel name is 'Google Craft' 
-            </p>
-            <hr/>
-            <p>
-                    HELLO! Type your comments bellow!
-            </p>        
-            <div>
-                <hr/>
-            <div class="footer">
-                <input type="text" id="name" placeholder="name"></input>
-                <input type="submit" value="Submit" id="submit_btn"></input>
-                <ul id="namelist">
-                </ul>
-            </div>
-            </div>`
+            </p>`
+            
     },
     'article-two':{
     title:'Article Two|Sai Ganesha',
@@ -164,7 +152,7 @@ app.get('/articles/:articleName', function(req,res){
     //articles[articleName] === {} content object for article-one
     
     //SELCT * FROM article WHERE title = 'article-one'
-    pool.query("SELECT * FROM article WHERE title ='"+ req.params.articleName + "'", function (err,result){
+    pool.query("SELECT * FROM article WHERE title =$1", [req.params.articleName], function (err,result){
         if (err){
             res.status(500).send(err.toString());
         }else{

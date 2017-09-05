@@ -13,66 +13,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one':{
-    title:'Article One|Sai Ganesha',
-    heading:'Article One',
-    date:'August8, 2017',
-    content:`
-     <p>
-                Hello I am Sai Ganesha. I study in Our Own English High School in Sharjah,U.A.E. I study 7th standard and I am 13 years old.
-            </p>
-           
-            <p>
-               I own a youtube channel and the channel name is 'Google Craft' 
-            </p>`
-            
-    },
-    'article-two':{
-    title:'Article Two|Sai Ganesha',
-    heading:'Article Two',
-    date:'August10, 2017',
-    content:
-    `<p>
-        This is the content for my second article. 
-    </p>
-    <hr/>
-    <p>
-                HELLO! Type your comments bellow!
-    </p>
-    <div>
-        <hr/>
-                <div class="footer">
-                <input type="text" id="name" placeholder="name"></input>
-                <input type="submit" value="Submit" id="submit_btn"></input>
-                <ul id="namelist">
-                </ul>
-    </div>
-    </div>`
-    },
-    'article-three':{
-    title:'Article Three|Sai Ganesha',
-    heading:'Article Three',
-    date:'September15, 2017',
-    content:
-    `<p>
-        This is the content for my third article. 
-     </p>
-     <hr/>
-      <p>
-                HELLO! Type your comments bellow!
-    </p>
-     <div>
-         <hr/>
-                <div class="footer">
-                <input type="text" id="name" placeholder="name"></input>
-                <input type="submit" value="Submit" id="submit_btn"></input>
-                <ul id="namelist">
-                </ul>
-    </div>
-    </div>`
-    }
-};
 
 var pool = new Pool(config);
 app.get('/', function (req, res) {
